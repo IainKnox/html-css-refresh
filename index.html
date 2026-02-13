@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>HTML & CSS Refresh</title>
 </head>
+
 <body>
     <div>
         <h1>HTML & CSS Refresh</h1>
@@ -40,5 +42,79 @@
             </tr>
         </table>
     </div>
+    <div>
+        <!-- A basic form utilizating the various input methods -->
+        <form method="POST">
+            <label for="user">Username :</label>
+            <input id="user" type="text" name="username">
+            <br />
+            <label for="email">Email :</label>
+            <input id="email" type="email" name="email">
+            <br />
+            <input type="submit">
+            <br />
+            <input type="reset">
+        </form>
+    </div>
+    <div>
+        <!-- create a textarea form object -->
+        <form method="POST">
+            <label for="feedback">How can we improve your experience with us ?</label>
+            <br>
+            <textarea id="feedback" rows="10" cols="50" placeholder="Your feedback..."></textarea>
+        </form>
+    </div>
+    <div>
+        <!-- create a checkbox element -->
+        <form>
+            <input id="terms_checkbox" type="checkbox" value="accept_terms">
+            <label for="terms_checkbox">I accept the terms and conditions</label>
+        </form>
+    </div>
+    <!-- Other types of checkbox elements -->
+    <p>Which languages or technologies do you use in your stack ?</p>
+    <form>
+        <div>
+            <input type="checkbox" name="html" id="html_checkbox">
+            <label for="html_checkbox">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" name="css" id="css_checkbox">
+            <label for="css_checkbox">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" name="javascript" id="js_checkbox">
+            <label for="js_checkbox">JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" name="python" id="py_checkbox">
+            <label for="py_checkbox">Python</label>
+        </div>
+    </form>
+    <br />
+    <!-- using Radio button elements within forms -->
+    <div>
+        <p>Which is your favourite fruit?</p>
+        <form method="post">
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <br />
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <br />
+            <input type="radio" name="fruit" id="pear" value="pear">
+            <label for="pear">Pear</label>
+            <br />
+            <input type="radio" name="fruit" id="orange" value="orange">
+            <label for="orange">Orange</label>
+            <br />
+            <input type="radio" name="fruit" id="none" value="none">
+            <label for="none">None of the Above</label>
+            <br />
+
+
+        </form>
+    </div><br />
 </body>
+
 </html>
