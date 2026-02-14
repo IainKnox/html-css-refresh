@@ -124,6 +124,19 @@
             <option value="python">Pyhton</option>
          </select>
     </form>
+    <br/>
+
+    <form>
+        <!-- using the datalist element for a predictive list within a form -->
+         <label for="browser">Which browser do you use? </label>
+         <input list="browser_list" name="browser" id="browser" type="text">
+         <datalist id="browser_list">
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Firefox"></option>
+            <option value="Edge"></option>
+         </datalist>
+    </form>
 </body>
 
 </html>
