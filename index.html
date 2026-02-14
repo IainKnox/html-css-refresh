@@ -111,10 +111,11 @@
             <input type="radio" name="fruit" id="none" value="none">
             <label for="none">None of the Above</label>
             <br />
+            <input type="submit">
         </form>
     </div>
     <br />
-    <form>
+    <form method="post">
         <!-- using the select element for a dropdown menu within a form -->
          <label for="language">Which language would you like to learn today?</label>
          <select id="language" name="language">
@@ -123,10 +124,11 @@
             <option value="javascript">JavaScript</option>
             <option value="python">Pyhton</option>
          </select>
+         <input type="submit">
     </form>
     <br/>
 
-    <form>
+    <form method="post" action=""">
         <!-- using the datalist element for a predictive list within a form -->
          <label for="browser">Which browser do you use? </label>
          <input list="browser_list" name="browser" id="browser" type="text">
@@ -136,6 +138,7 @@
             <option value="Firefox"></option>
             <option value="Edge"></option>
          </datalist>
+         <input type="submit">
     </form>
 </body>
 
