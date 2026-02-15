@@ -117,37 +117,131 @@
     <br />
     <form method="post">
         <!-- using the select element for a dropdown menu within a form -->
-         <label for="language">Which language would you like to learn today?</label>
-         <select id="language" name="language">
+        <label for="language">Which language would you like to learn today?</label>
+        <select id="language" name="language">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="javascript">JavaScript</option>
             <option value="python">Pyhton</option>
-         </select>
-         <input type="submit">
+        </select>
+        <input type="submit">
     </form>
-    <br/>
+    <br />
 
     <form method="post" action=""">
         <!-- using the datalist element for a predictive list within a form -->
-         <label for="browser">Which browser do you use? </label>
-         <input list="browser_list" name="browser" id="browser" type="text">
-         <datalist id="browser_list">
+         <label for=" browser">Which browser do you use? </label>
+        <input list="browser_list" name="browser" id="browser" type="text">
+        <datalist id="browser_list">
             <option value="Chrome"></option>
             <option value="Opera"></option>
             <option value="Firefox"></option>
             <option value="Edge"></option>
-         </datalist>
-         <input type="submit">
+        </datalist>
+        <input type="submit">
     </form>
-    <br/>
+    <br />
     <form method="post">
         <label for="update-username">Please update your username: </label>
         <input id="update-username" type="text" name="username">
         <input type="submit">
         <button type="reset"><strong>Reset</strong></button>
     </form>
-    <br/>
+    <br />
+
+    <form method="post">
+        <!-- using the fieldset element to group element in a form -->
+        <fieldset>
+            <legend>Your Details:</legend>
+            <label for="name">Name :</label>
+            <input id="name" type="text" name="user-name">
+            <br />
+            <label for="email">Email :</label>
+            <input id="email" type="email" name="user-mail">
+        </fieldset>
+    </form>
+
+    <!-- multi field elements seperated and grouped within the fieldset element within a form -->
+    <form method="post">
+        <fieldset>
+            <legend>Your Details</legend>
+            <div>
+                <label for="name-field">Name :</label>
+                <input id="name-field" name="full-name" type="text" placeholder="Your Name">
+            </div>
+            <div>
+                <label for="email-field">Email :</label>
+                <input id="email-field" name="email" type="email" placeholder="Your Email Address" </div>
+
+                <div>
+                    <label for="age">Age :</label>
+                    <select id="age" name="age">
+                        <option value="under-20">Under 20</option>
+                        <option value="20s">20-29</option>
+                        <option value="30s">30-39</option>
+                        <option value="40s">40-49</option>
+                        <option value="50s">50-59</option>
+                        <option value="60+">60 and Older</option>
+                    </select>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Our Products</legend>
+            <div>
+                <label for="fav-coffee">What is your Favourite Coffee? </label>
+                <input id="fav-coffee" list="coffees" name="fav-coffee">
+                <datalist id="coffees">
+                    <option value="Americano"></option>
+                    <option value="Cappuccino"></option>
+                    <option value="Espresso"></option>
+                    <option value="Machiato"></option>
+                    <option value="Flat-white"></option>
+                    <option value="Latte"></option>
+                </datalist>
+            </div>
+            <p>How many cups of coffee do you drink a day? </p>
+
+            <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio">
+            <label for="0-2cups-radio">0-2 cups</label>
+            <input id="3-5cups-radio" name="cups-a-day" value="3-5cups" type="radio">
+            <label for="3-5cups-radio">3-5 cups</label>
+            <input id="6-8cups-radio" name="cups-a-day" value="6-8cups" type="radio">
+            <label for="6-8cups-radio">6-8 cups</label>
+            <input id="9+cups-radio" name="cups-a-day" value="9+cups" type="radio">
+            <label for="9+cups-radio">9 or more cups</label>
+
+            <p>How often do you visit our coffee shop? </p>
+
+            <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio">
+            <label for="once-a-week">Once a week</label>
+            <input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio">
+            <label for="twice-a-week">Twice a week</label>
+            <input id="once-a-fortnight" name="visit-frequency" value="once-a-fortnight" type="radio">
+            <label for="once-a-fortnight">Once a Fortnight</label>
+            <input id="not-often" name="visit-frequency" value="not-often" type="radio">
+            <label for="not-often">Not Often</label>
+
+            <p>Which of our treat do you enjoy most? </p>
+            <div>
+                <input id="brownie-checkbox" type="checkbox" name="brownies">
+                <label for="brownie-checkbox">Brownies</label>
+            </div>
+            <div>
+                <input id="blondie-checkbox" type="checkbox" name="blondies">
+                <label for="blondies-checkbox">Blondies</label>
+            </div>
+            <div>
+                <input id="scones-checkbox" type="checkbox" name="scones">
+                <label for="scones-checkbox">Scones</label>
+            </div>
+            <div>
+                <input id="cookies-checkbox" type="checkbox" name="cookies">
+                <label for="cookies-checkbox">Cookies</label>
+            </div>
+        </fieldset>
+
+
+    </form>
 </body>
 
 </html>
