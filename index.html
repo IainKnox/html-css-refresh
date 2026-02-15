@@ -167,15 +167,16 @@
             <legend>Your Details</legend>
             <div>
                 <label for="name-field">Name :</label>
-                <input id="name-field" name="full-name" type="text" placeholder="Your Name">
+                <input id="name-field" name="full-name" type="text" placeholder="Your Name" required>  <!-- added form validation -->
             </div>
             <div>
                 <label for="email-field">Email :</label>
-                <input id="email-field" name="email" type="email" placeholder="Your Email Address" </div>
+                <input id="email-field" name="email" type="email" placeholder="Your Email Address" required> <!-- added form validation -->
+            </div>
 
                 <div>
                     <label for="age">Age :</label>
-                    <select id="age" name="age">
+                    <select id="age" name="age" required>  <!-- added form validation-->
                         <option value="under-20">Under 20</option>
                         <option value="20s">20-29</option>
                         <option value="30s">30-39</option>
@@ -189,7 +190,7 @@
             <legend>Our Products</legend>
             <div>
                 <label for="fav-coffee">What is your Favourite Coffee? </label>
-                <input id="fav-coffee" list="coffees" name="fav-coffee">
+                <input id="fav-coffee" list="coffees" name="fav-coffee" required> <!-- added form validation -->
                 <datalist id="coffees">
                     <option value="Americano"></option>
                     <option value="Cappuccino"></option>
@@ -201,7 +202,7 @@
             </div>
             <p>How many cups of coffee do you drink a day? </p>
 
-            <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio">
+            <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required> <!-- added form validation -->
             <label for="0-2cups-radio">0-2 cups</label>
             <input id="3-5cups-radio" name="cups-a-day" value="3-5cups" type="radio">
             <label for="3-5cups-radio">3-5 cups</label>
@@ -212,7 +213,7 @@
 
             <p>How often do you visit our coffee shop? </p>
 
-            <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio">
+            <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required> <!-- added form validation -->
             <label for="once-a-week">Once a week</label>
             <input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio">
             <label for="twice-a-week">Twice a week</label>
@@ -223,7 +224,7 @@
 
             <p>Which of our treat do you enjoy most? </p>
             <div>
-                <input id="brownie-checkbox" type="checkbox" name="brownies">
+                <input id="brownie-checkbox" type="checkbox" name="brownies" > <!-- form validation cannot be added to checkboxes -->
                 <label for="brownie-checkbox">Brownies</label>
             </div>
             <div>
@@ -239,6 +240,7 @@
                 <label for="cookies-checkbox">Cookies</label>
             </div>
         </fieldset>
+        <input type="submit" value="Submit Form"
 
 
     </form>
