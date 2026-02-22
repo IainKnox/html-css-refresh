@@ -10,13 +10,22 @@
 
 <body>
     <div>
-    <header id="home">
-        <h1>HTML & CSS Refresh</h1>
-        <p>A basic little site, utilizing concept relearned to refresh my knowledge of HTML and CSS</p>
+        <header id="home">
+            <h1>HTML & CSS Refresh</h1>
+            <p>A basic little site, utilizing concept relearned to refresh my knowledge of HTML and CSS</p>
         </header>
     </div>
-    </div>
-    <div>
+    <hr>
+    <!-- create a navigation bar element for moving around the page-->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#table">Tables</a>
+        <a href="#forms">Forms</a>
+        <a href="#media">Media</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <div id="table">
         <table>
             <tr>
                 <th></th>
@@ -45,7 +54,8 @@
             </tr>
         </table>
     </div>
-    <div>
+    <hr>
+    <div id="forms">
         <!-- A basic form utilizating the various input methods -->
         <form method="POST">
             <label for="user">Username :</label>
@@ -170,24 +180,26 @@
             <legend>Your Details</legend>
             <div>
                 <label for="name-field">Name :</label>
-                <input id="name-field" name="full-name" type="text" placeholder="Your Name" required>  <!-- added form validation -->
+                <input id="name-field" name="full-name" type="text" placeholder="Your Name" required>
+                <!-- added form validation -->
             </div>
             <div>
                 <label for="email-field">Email :</label>
-                <input id="email-field" name="email" type="email" placeholder="Your Email Address" required> <!-- added form validation -->
+                <input id="email-field" name="email" type="email" placeholder="Your Email Address" required>
+                <!-- added form validation -->
             </div>
 
-                <div>
-                    <label for="age">Age :</label>
-                    <select id="age" name="age" required>  <!-- added form validation-->
-                        <option value="under-20">Under 20</option>
-                        <option value="20s">20-29</option>
-                        <option value="30s">30-39</option>
-                        <option value="40s">40-49</option>
-                        <option value="50s">50-59</option>
-                        <option value="60+">60 and Older</option>
-                    </select>
-                </div>
+            <div>
+                <label for="age">Age :</label>
+                <select id="age" name="age" required> <!-- added form validation-->
+                    <option value="under-20">Under 20</option>
+                    <option value="20s">20-29</option>
+                    <option value="30s">30-39</option>
+                    <option value="40s">40-49</option>
+                    <option value="50s">50-59</option>
+                    <option value="60+">60 and Older</option>
+                </select>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Our Products</legend>
@@ -205,7 +217,8 @@
             </div>
             <p>How many cups of coffee do you drink a day? </p>
 
-            <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required> <!-- added form validation -->
+            <input id="0-2cups-radio" name="cups-a-day" value="0-2cups" type="radio" required>
+            <!-- added form validation -->
             <label for="0-2cups-radio">0-2 cups</label>
             <input id="3-5cups-radio" name="cups-a-day" value="3-5cups" type="radio">
             <label for="3-5cups-radio">3-5 cups</label>
@@ -216,7 +229,8 @@
 
             <p>How often do you visit our coffee shop? </p>
 
-            <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required> <!-- added form validation -->
+            <input id="once-a-week" name="visit-frequency" value="once-a-week" type="radio" required>
+            <!-- added form validation -->
             <label for="once-a-week">Once a week</label>
             <input id="twice-a-week" name="visit-frequency" value="twice-a-week" type="radio">
             <label for="twice-a-week">Twice a week</label>
@@ -227,7 +241,8 @@
 
             <p>Which of our treat do you enjoy most? </p>
             <div>
-                <input id="brownie-checkbox" type="checkbox" name="brownies" > <!-- form validation cannot be added to checkboxes -->
+                <input id="brownie-checkbox" type="checkbox" name="brownies">
+                <!-- form validation cannot be added to checkboxes -->
                 <label for="brownie-checkbox">Brownies</label>
             </div>
             <div>
@@ -243,61 +258,81 @@
                 <label for="cookies-checkbox">Cookies</label>
             </div>
         </fieldset>
-        <input type="submit" value="Submit Form"
-    </form>
-    <br/>
+        <input type="submit" value="Submit Form" </form>
+        <br />
 
-    <!-- img element-->
-    <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coders-coffeehouse-project-1.jpg" alt="Cafe table with a laptop and coffee" width="400">
-    <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coffeehouse.jpg" alt="Chilling inside the coffee shop" width="400">
-    <br/>
+        <div id="media">
+            <!-- img element-->
+            <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coders-coffeehouse-project-1.jpg"
+                alt="Cafe table with a laptop and coffee" width="400">
+            <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/coffeehouse.jpg"
+                alt="Chilling inside the coffee shop" width="400">
+            <br />
 
-    <!-- picture element-->
-     <picture>
-	    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-small.jpg" media="(max-width:600px)">
-	    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-portrait.jpg" media="(max-width:800px)">
-	    <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-landscape.jpg" alt="Photograph of a laptop, notepad and a mug of cappuccino coffee on a wooden desk."
-	</picture>
-    <br/>
-    <div>
-        	<p>After you have added your code below, resize the browser horizontally to see a different picture loading at different viewport sizes</p>
-  	<picture>
-  	    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/jellyfish.png" media="(max-width: 800px)">
-  	    <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunflower.png" media="(max-width: 900px)">
-  	    <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/art.png" alt="Assorted images">
-  	    
-  	</picture>
-    </div>
-    <!-- iframes element -->
-    <div>
-        <iframe src="https://bit.ly/2QVfkiy" height="300" width="100%"></iframe>
-    </div>
-    <!-- audio element -->
-     <div>
-        <audio src="http://codeinstitute.s3.amazonaws.com/HTMLEssentials/btn-audio.mp3" controls >
-	    <p>Your browser does not support HTML5 audio</p>
-	</audio>
-     </div>
-     <!-- audio element with a loop so that it continues to play until interupted by the user -->
-     <div>
-        <audio src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/kid-laughing.mp3" loop controls>
-        <span>Your browser doesn't support HTML5 audio:</span>
-        <a href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/kid-laughing.mp3">Link to the audio</a>
-    </audio>
-     </div>
-     <!-- video element with autoplay and loop controls -->
-     <div>
-        <video src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/pool-video.mp4" width="400" autoplay muted loop controls>
-	    <p>Your browser doesn't support HTML5 video.</p>
-	    
-	</video>
-     </div>
-     <div>
-        <video src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4" width="800" autoplay muted>
-        <p>Your browser doesn't support HTML5 video.</p>
-        <a href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4">Link to the video.</a>
-    </video>
-     </div>
+            <!-- picture element-->
+            <picture>
+                <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-small.jpg"
+                    media="(max-width:600px)">
+                <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-portrait.jpg"
+                    media="(max-width:800px)">
+                <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/desk-landscape.jpg"
+                    alt="Photograph of a laptop, notepad and a mug of cappuccino coffee on a wooden desk." </picture>
+                <br />
+                <div>
+                    <p>After you have added your code below, resize the browser horizontally to see a different picture
+                        loading at different viewport sizes</p>
+                    <picture>
+                        <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/jellyfish.png"
+                            media="(max-width: 800px)">
+                        <source srcset="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunflower.png"
+                            media="(max-width: 900px)">
+                        <img src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/art.png" alt="Assorted images">
+
+                    </picture>
+                </div>
+        </div>
+        <!-- iframes element -->
+        <div>
+            <iframe src="https://bit.ly/2QVfkiy" height="300" width="100%"></iframe>
+        </div>
+        <!-- audio element -->
+        <div>
+            <audio src="http://codeinstitute.s3.amazonaws.com/HTMLEssentials/btn-audio.mp3" controls>
+                <p>Your browser does not support HTML5 audio</p>
+            </audio>
+        </div>
+        <!-- audio element with a loop so that it continues to play until interupted by the user -->
+        <div>
+            <audio src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/kid-laughing.mp3" loop controls>
+                <span>Your browser doesn't support HTML5 audio:</span>
+                <a href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/kid-laughing.mp3">Link to the
+                    audio</a>
+            </audio>
+        </div>
+        <!-- video element with autoplay and loop controls -->
+        <div>
+            <video src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/pool-video.mp4" width="400" autoplay muted
+                loop controls>
+                <p>Your browser doesn't support HTML5 video.</p>
+
+            </video>
+        </div>
+        <div>
+            <video src="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4" width="800" autoplay muted>
+                <p>Your browser doesn't support HTML5 video.</p>
+                <a href="https://codeinstitute.s3.amazonaws.com/HTMLEssentials/sunset.mp4">Link to the video.</a>
+            </video>
+        </div>
+        <div>
+            <footer id="footer">
+                <span>Find us on: </span>
+                <a href="https://www.facebook.com" rel="noopener" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com" rel="noopener" target="_blank">Instagram</a>
+                <a href="https://www.x.com" rel="noopener" target="_blank">X</a>
+                <p>Copyright Knoxclan 2026</p>
+
+            </footer>
+        </div>
 </body>
 
 </html>
