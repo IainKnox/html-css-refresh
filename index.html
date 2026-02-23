@@ -17,12 +17,16 @@
     </div>
     <hr>
     <!-- create a navigation bar element for moving around the page-->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#table">Tables</a>
-        <a href="#forms">Forms</a>
-        <a href="#media">Media</a>
-        <a href="#footer">Footer</a>
+    <nav class="navbar sticky infront">
+        <div class="nav-links">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#table">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#footer">Footer</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div id="table">
@@ -326,11 +330,14 @@
         <div>
             <footer id="footer">
                 <span>Find us on: </span>
-                <a href="https://www.facebook.com" rel="noopener" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com" rel="noopener" target="_blank">Instagram</a>
-                <a href="https://www.x.com" rel="noopener" target="_blank">X</a>
-                <p>Copyright Knoxclan 2026</p>
-                <a href="#home">Back to top</a> <!-- allows the user to quickly pop back to the top of the page-->
+                <ul class="social-links">
+                <li><a href="https://www.facebook.com" rel="noopener" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" rel="noopener" target="_blank">Instagram</a></li>
+                <li><a href="https://www.x.com" rel="noopener" target="_blank">X</a></li>
+                
+                 <p>Copyright <span>&copy;</span> 2026 | Privacy Policy | Terms & Conditions</p>
+                <li><a href="#home">Back to top</a></li> <!-- allows the user to quickly pop back to the top of the page-->
+            </ul>
 
             </footer>
         </div>
